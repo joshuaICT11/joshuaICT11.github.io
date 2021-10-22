@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+table {
+    width: 600px;
+}
+
+table, tr, td, th {
+    border: 1px solid lightblue;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+img { width: 150px;}
+
+p { font-size: 12px;}
+a { font-size: 10px;}
+p , a {
+    text-transform: none;
+}
+
+h2 {
+    font-size: 15px;
+}
