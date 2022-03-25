@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var quiz = [10, 20, 15, 7, 19, 20]
+        let totalScore = 0;
+        
+        var passedQuizzes = quiz.filter(function(score) {
+            return score >= 10;
+        })
+        var failedQuizzes = quiz.filter(function(score){
+            return score < 10;
+        })
+        for (var i = 0; i < quiz.length; i++) {
+            totalScore += quiz[i];
+        }
+        let average = Math.round(totalScore / quiz.length);
+
+        document.write("Passed: " + passedQuizzes + "<br />");
+        document.write("Failed: " + failedQuizzes + "<br />");
+        document.write("Total Average: " + average + "<hr />");
+
+    </script>
+
+</body>
+</html>
